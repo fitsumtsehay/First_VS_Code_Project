@@ -15,12 +15,17 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="resources/css/stylesheet.css">
 
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- <title> Responsive Drop Down Navigation Menu | </title>-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 		<!-- End Link to preis bootstrap -->
 
@@ -40,7 +45,62 @@
 			<!--navbar starts-->
     
     <div id="container">
+		
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Hiker Paradise</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">CodingLab</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">PROJECT</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Landscape</a></li>
+              <li><a href="#">Water</a></li>
+              <li><a href="#">Wild LIfe</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Animals</a></li>
+                  <li><a href="#">Recreation</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">EVENT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Conference</a></li>
+              <li><a href="#">Meetups</a></li>
+              <li><a href="#">Holidays</a></li>
+              <li><a href="#">Partys</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--<script src="script.js"></script>-->
 
+<!--
       <nav>
         <div id="logo">
 			<p class="popout">
@@ -91,8 +151,8 @@
         </ul>
       </nav>
     </div>
+-->
 			<!--navbar ends-->
-		  <br>
 		  <br>
 		  <br>
 		  <br>
@@ -106,7 +166,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="card">
-								<img src="/image/mt-rainier-natl-park.jpeg" class="card-img-top" alt="...">
+								<img src="resources/images/mt-rainier-natl-park.jpeg" class="card-img-top" alt="...">
 								<div class="card-body">
 								  <h5 class="card-title">Rainier National Park</h5>
 								  <p class="card-text">Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape.</p>
@@ -118,7 +178,7 @@
 						</div>
 						<div class="col">
 							<div class="card">
-								<img src="/image/north-cascades2.jpg" class="card-img-top" alt="...">
+								<img src="resources/images/north-cascades2.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
 								  <h5 class="card-title">North Cascades National Park</h5>
 								  <p class="card-text">Discover communities of life adapted to moisture in the west and recurring fire in the east.</p>
@@ -131,7 +191,7 @@
 						</div>
 						<div class="col">
 							<div class="card">
-								<img src="/image/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg" class="card-img-top" alt="...">
+								<img src="resources/images/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
 								  <h5 class="card-title">Olympic National Park</h5>
 								  <p class="card-text">Be inspired by the glacier-capped peaks, valleys of forests, hot springs, and rugged Pacific coastline..</p>
