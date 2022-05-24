@@ -60,8 +60,8 @@ h3 {
 /* Add styles to 'container' class */
 .container {
 	padding: 12px 24px 24px 24px;
-	margin: 0px px;
-	background: #ffeedd;
+	margin: 48px px;
+	background: #dedfb3;
 	border-radius: 4px;
 }
 
@@ -125,7 +125,7 @@ input[type=submit]:hover {
 	padding:0;
   }
   body {
-	background-color:#f8f8ee;
+	background-color:#dedfb3;
 	font-family: 'Raleway', sans-serif;
   }
   #ribbon {
@@ -149,30 +149,18 @@ input[type=submit]:hover {
 
 
   }
-
-  #containers {
-	position:absolute;
-	width: 80%;
-	background-color:#3e8da8;
-	box-shadow: -2px -2px 5px white,2px -2px 5px white;
-	margin-right: 0em;
-	width: 89%;
-	
-
-
-  }
   #container > nav {
-	position:absolute;
-	width: 95%;
-	background-color:#3e8da8;
-	box-shadow: -2px -2px 5px white,2px -2px 5px white;
-	margin-right: 0em;
-	width: 110%
+	display:flex;
+	max-height:60px;
+	max-width: 95%;
+	margin-left:1em;
+	margin-right: 0%;
+
   }
   #logo {
 	line-height:60px;
 	font-size:20px;
-	padding: 50px;
+	padding: 0 50px;
 	color: #dedfb3;
 	width:40%;
 	letter-spacing:2px;
@@ -284,13 +272,12 @@ nav{
   top: 1;
   left: .5;
   right: 1;
-  width: 80%;
+  width: 76%;
   height: 100%;
-  width: 78%;
   height: 70px;
   background: #3E8DA8;
   z-index: 99;
-  margin: 20px 20px;
+  margin: 48px px;
 }
 nav .navbar{
   height: 100%;
@@ -573,183 +560,3 @@ nav .navbar .links li .sub-menu li{
   max-width: 100%;
 } 
 }
-/*about*/
-.text-box {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align:center;  
-  }
-  
-  .heading-primary {
-	  color:#333;
-	  text-transform: uppercase;
-  }
-  
-  .heading-primary-main {
-	  display: block;
-	  font-size: 60px;
-	  font-weight: 400;
-	  letter-spacing: 35px;
-	 /*  Animation decalaration   */
-	  animation-name: moveInleft;
-	  animation-duration: 3s;
-  }
-  
-  .heading-primary-sub {
-	  display: block;
-	  font-size: 20px;
-	  font-weight: 700;
-	  letter-spacing: 15.9px;
-	
-	  animation-name: moveInRight;
-	  animation-duration: 3s;
-  }
-  
-  @keyframes moveInleft {
-	  0% {
-		  opacity: 0;
-		  transform: translateX(-100px);
-	  }
-  
-	  80% {
-		  transform: translateX(10px);
-	  }
-	  100% {
-		  opacity: 1;
-		  transform: translate(0);
-	  }
-  }
-  
-  @keyframes moveInRight {
-	  0% {
-		  opacity: 0;
-		  transform: translateX(100px);
-	  }
-  
-	  80% {
-		  transform: translateX(-10px);
-	  }
-	  
-	  100% {
-		  opacity: 1;
-		  transform: translate(0);
-	  }
-  
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.5;
-  }
-
-.menu__block{
-    width: 100%;
-    height: 3em;
-    background-color: blueviolet;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.title__text {
-    margin-left: 3px;
-    color: black;
-}
-
-.card-title{
-    color: black;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.gallery__flex {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap:5px;
-}
-
-.card{
-    background: #756e51;
-    padding: 10px;
-    width: 635px;
-    height: 400px;
-    margin: 10px 10px;
-    color: white;
-    text-align: left;
-}
-
-/* @media all and (max-width: 500px) {
-    .gallery__flex {
-        flex-direction: column;
-    }
-  } */
-
-  html {
-	box-sizing: border-box;
-  }
-  *, *:before, *:after {
-	box-sizing: inherit;
-  }
-  body {
-	  margin: 0;
-	  background-color: #FFEEDD;
-  }
-  .textbox-1 {
-	  font-size: 1.50em;
-	  text-align: justify;
-	  padding-left: 1em;
-	  padding-right: 1em;
-	  padding-top: 1em;
-  }
-  .row {
-	  display: flex;
-	  justify-content:space-around;
-	  padding:25px 0 ;
-	  max-width:1280px;
-	  margin:auto;
-	  
-  }
-  .w50 {
-	  flex: 0 0 45%;
-	  background:#f9f9f9;
-  }
-  .object-fit{
-	  overflow:hidden;
-	  position:relative;
-  }
-  .object-fit img{
-	  position: absolute;
-	  top:50%;
-	  left:50%;
-	  height:auto;
-	  width:auto;
-	  min-width:100%;
-	  min-height:100%;
-	  transform:translate(-50%, -50%);
-  }
-  @supports (object-fit: cover) {
-	.object-fit img  {
-	  position: static;
-	  height: 100%;
-	  width: 100%;
-	  transform: none;
-	  object-fit: cover;
-	}
-  }
